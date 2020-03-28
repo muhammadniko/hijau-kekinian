@@ -10,22 +10,6 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'title-tag' );
 
 /**
- * Auto Thumbnail from first Image Post
-
-add_filter('get_post_metadata', function($value, $object_id, $meta_key, $single) {
-	if ($meta_key !== '_thumbnail_id' || $value) {
-		return $value;
-	}
-
-	preg_match('~<img[^>]+wp-image-(\\d+)~', get_post_field('post_content', $object_id), $matches);
-	if ($matches) {
-		return $matches[1];
-	}
-	return $value;
-}, 10, 4);
-*/
-
-/**
  * Change readmore post cut
  */
 
@@ -51,10 +35,10 @@ function load_theme_scripts() {
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array(), '3.3' );
 
 	// Add Prism, used in the main stylesheet.
-	wp_enqueue_style( 'prism', get_template_directory_uri() . '/css/prism.css', array(), '1.15' );
+	//wp_enqueue_style( 'prism', 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css', array(), '1.15' );
 
 	// Add FontAweasome, used in the main stylesheet.
-	wp_enqueue_style( 'FontAweasome', get_template_directory_uri() . '/css/font-awesome/css/font-awesome.min.css', array(), '4.5' );
+	wp_enqueue_style( 'FontAweasome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.5' );
 
 	// Load our main stylesheet.
 	wp_enqueue_style( 'hijau-kekinian-style', get_stylesheet_uri(), array(), rand(111,9999));
@@ -62,7 +46,7 @@ function load_theme_scripts() {
 	// Load Javascript
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.1.1.min.js', array(), '3.1', false );
 	wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array(), '3.3', false );
-	wp_enqueue_script( 'prism-js', get_template_directory_uri() . '/js/prism.js', array(), '1.15', false );
+	//wp_enqueue_script( 'prism-js', 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js', array(), '1.15', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'load_theme_scripts' );

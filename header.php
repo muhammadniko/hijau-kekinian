@@ -1,8 +1,6 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-<script data-ad-client="ca-pub-9755357089598908" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<meta name="msvalidate.01" content="ECD022509D0F0F535614250354F76945" />
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
