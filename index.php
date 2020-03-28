@@ -16,7 +16,7 @@
 					<i class="fa fa-pencil"></i> <?php the_author_link();?>
 				</span>
 				<div class="the-post-content"><?php the_excerpt();?></div>
-				<p align="right" class="index-post-meta"><i class="fa fa-tags"></i> <?php the_category(', '); ?> &nbsp;&nbsp;<i class="fa fa-comments"></i> <a href="<?php the_permalink();?>#comment"><?php comments_number();?></a></p>		
+				<p align="right" class="post-meta"><i class="fa fa-tags"></i> <?php the_category(', '); ?> &nbsp;&nbsp;<i class="fa fa-comments"></i> <a href="<?php the_permalink();?>#comment"><?php comments_number();?></a></p>		
 				
 				<hr>
 				<?php endwhile;	endif;?>

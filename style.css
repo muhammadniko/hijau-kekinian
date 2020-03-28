@@ -1,12 +1,10 @@
 /*
 Theme Name: Hijau Kekinian
-Theme URI: https://www.muhammadniko.hol.es/hijau-kekinian/
 Author: Muhammad Niko
-Author URI: http://muhammadniko.hol.es/
+Author URI: http://muhammadniko.web.id/
 Description: Hijau Kekinian is the Simple and Powerful Theme designed for Blogging activity. it's fully responsive in any devices.
 Version: 1.1
 Tags: Green, Responsive Layout, Right Sidebar, Simple, Powerful, Featured Image
-Text Domain: hijau-kekinian
 */
 
 
@@ -164,12 +162,11 @@ blockquote{
 	background: #fff;
 	box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.1);
 	border-radius: 0;
-	/*border: 1px #dfdfdf solid;*/
 	margin: 20px 0px;
 }
 
 .nav-area a {
-	color: /*#1cc373*/#555;
+	color: #555;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -287,9 +284,7 @@ blockquote{
 
 .post-contents {
 	background: #fff;
-	/*border: 1px #dfdfdf solid;*/
-/*	box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.1);
-*/	padding: 25px;
+	padding: 25px;
     font-family: 'Roboto', sans-serif;
 	padding-bottom: 20px;
 	margin-bottom: 30px;

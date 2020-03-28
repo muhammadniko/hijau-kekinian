@@ -23,7 +23,12 @@
 <!-- Area Header -->
 <div class="row header-area">
 	<div class="container">
-		<div class="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name');?></a></div>
+		<?php if (is_home()) : ?>
+			<h1 class="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name');?></a></h1>
+		<?php else : ?>
+			<div class="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name');?></a></div>
+		<?php endif;?>
+
 		<div class="site-description"><span class="label label-default">.web.id</span> <?php bloginfo('description');?></div>
 	</div>
 </div>

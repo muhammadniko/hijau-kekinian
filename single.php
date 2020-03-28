@@ -12,7 +12,7 @@
 				<p align="center"> <!-- SHARE ON BUTTON -->				
 					<a target="popupwindow" href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>" id="sfacebook" title="Share on Facebook"> Share</a>
 					<a target="popupwindow" href="https://twitter.com/share?text=<?php the_title(); ?> - Read:&url=<?php the_permalink();?>" id="stwitter" title="Share on Twitter"> Share</a>
-					<a target="popupwindow" href="whatsapp://send?text=<?php the_title(); ?> - <?php the_permalink();?>" id="sgoogle" title="Share on Google"> Share</a>
+					<a href="whatsapp://send?text=<?php the_permalink();?>" id="sgoogle" title="Share on WhatsApp"> Share</a>
 				</p> <!--/ SHARE ON BUTTON -->
 				<p class="post-meta">
 					by <?php the_author_link();?>&nbsp;&nbsp;					
@@ -26,7 +26,7 @@
 				<p align="center"> <!-- SHARE ON BUTTON -->				
 					<a target="popupwindow" href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>" id="sfacebook" title="Share on Facebook"> Share</a>
 					<a target="popupwindow" href="https://twitter.com/share?text=<?php the_title(); ?> - Read:&url=<?php the_permalink();?>" id="stwitter" title="Share on Twitter"> Share</a>
-					<a target="popupwindow" href="whatsapp://send?text=<?php the_title(); ?> - <?php the_permalink();?>" id="sgoogle" title="Share on Google"> Share</a>
+					<a href="whatsapp://send?text=<?php the_permalink();?>" id="sgoogle" title="Share on WhatsApp"> Share</a>
 				</p> <!--/ SHARE ON BUTTON -->
 				<hr>
 				
