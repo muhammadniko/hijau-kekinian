@@ -8,9 +8,6 @@ Version: 1.1
 Tags: Green, Responsive Layout, Right Sidebar, Simple, Powerful, Featured Image
 Text Domain: hijau-kekinian
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-@import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
 
 /* Typography */
@@ -145,6 +142,7 @@ blockquote{
 
 .site-title {
 	line-height: 1;
+	font-size: 38px;
 	font-weight: bold;
 	margin: 10px 0;
 }
@@ -309,7 +307,14 @@ blockquote{
 }
 
 .post-contents h3 {
-	font-size: 24px;
+	font-size: 28px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	color: #4d4d4d;
+}
+
+.post-contents h2 {
+	font-size: 28px;
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 700;
 	color: #4d4d4d;
@@ -318,9 +323,6 @@ blockquote{
 .post-meta {
 	font-size: 14px;
 	color: #555;
-}
-
-.the-post-content {
 }
 
 .aligncenter {
@@ -377,14 +379,14 @@ blockquote{
 	padding-right: 10px;
 }
 
-.post-title {
+h2.post-title {
 	font-size: 24px;
 	font-weight: 700;
 	color: #4d4d4d;
     font-family: 'PT Sans', sans-serif;
 }
 
-.single-post-title {
+h1.post-title {
 	font-size: 32px;
 	font-weight: 700;
     font-family: 'PT Sans', sans-serif;

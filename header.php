@@ -23,8 +23,8 @@
 <!-- Area Header -->
 <div class="row header-area">
 	<div class="container">
-		<h1 class="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name');?></a></h1>
-		<h2 class="site-description"><span class="label label-default">.web.id</span> <?php bloginfo('description');?></h2>
+		<div class="site-title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name');?></a></div>
+		<div class="site-description"><span class="label label-default">.web.id</span> <?php bloginfo('description');?></div>
 	</div>
 </div>
 <!--/ Area Header -->

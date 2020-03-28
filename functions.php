@@ -31,14 +31,19 @@ add_filter('excerpt_length', 'new_excerpt_length');
  */
 
 function load_theme_scripts() {
+
+	//Load fonts
+	wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap' );
+	wp_enqueue_style( 'pt-sans', 'https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap' ); 
+
 	// Add Bootstrap, used in the main stylesheet.
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array(), '3.3' );
-	
+
 	// Add FontAweasome, used in the main stylesheet.
-	wp_enqueue_style( 'FontAweasome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.5' );
+	wp_enqueue_style( 'font-aweasome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.5' );
 
 	// Load our main stylesheet.
-	wp_enqueue_style( 'hijau-kekinian-style', get_stylesheet_uri(), array(), rand(111,9999));
+	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), rand(111,9999));
 
 	// Load Javascript
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.1.1.min.js', array(), '3.1', false );
