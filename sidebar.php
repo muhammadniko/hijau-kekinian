@@ -1,4 +1,4 @@
-<?php if ( is_active_sidebar( 'sidebar-1' ) ) : dynamic_sidebar( 'sidebar-1' ); endif; ?>
+<?php dynamic_sidebar( 'sidebar-1' ); ?>
 <div class="widget-newsletter">
 	<h3>Langganan, Mau?</h3>
 	<p>Untuk mendapatkan update artikel terbaru dari blog ini melalui inbox, Masukan Email kalian disini lalu klik SUBSCRIBE !</p>

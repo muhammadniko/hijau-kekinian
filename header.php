@@ -7,7 +7,7 @@
 <link rel="shortcut icon" href="<?php bloginfo('url'); ?>/wp-content/uploads/2016/07/u.png" />
 <?php wp_head();?>
 </head>
-<body>
+<body <?php body_class();?>>
 
 <!-- Area Top Menu -->
 <div class="row top-menu-area">
