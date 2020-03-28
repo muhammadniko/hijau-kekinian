@@ -1,13 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-9755357089598908",
-    enable_page_level_ads: true
-  });
-</script>
+<script data-ad-client="ca-pub-9755357089598908" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <meta name="msvalidate.01" content="ECD022509D0F0F535614250354F76945" />
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>

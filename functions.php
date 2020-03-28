@@ -10,6 +10,22 @@ add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'title-tag' );
 
 /**
+ * Auto Thumbnail from first Image Post
+
+add_filter('get_post_metadata', function($value, $object_id, $meta_key, $single) {
+	if ($meta_key !== '_thumbnail_id' || $value) {
+		return $value;
+	}
+
+	preg_match('~<img[^>]+wp-image-(\\d+)~', get_post_field('post_content', $object_id), $matches);
+	if ($matches) {
+		return $matches[1];
+	}
+	return $value;
+}, 10, 4);
+*/
+
+/**
  * Change readmore post cut
  */
 

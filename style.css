@@ -10,6 +10,7 @@ Text Domain: hijau-kekinian
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
 
 /* Typography */
@@ -309,6 +310,7 @@ blockquote{
 
 .post-contents h3 {
 	font-size: 24px;
+	font-family: 'PT Sans', sans-serif;
 	font-weight: 700;
 	color: #4d4d4d;
 }
@@ -379,13 +381,13 @@ blockquote{
 	font-size: 24px;
 	font-weight: 700;
 	color: #4d4d4d;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .single-post-title {
 	font-size: 32px;
 	font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 	padding: 0 10px 10px 10px;
 }
 
