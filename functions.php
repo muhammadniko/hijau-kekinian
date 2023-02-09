@@ -34,7 +34,8 @@ function load_theme_scripts() {
 
 	//Load fonts
 	wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap' );
-	wp_enqueue_style( 'pt-sans', 'https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap' ); 
+	wp_enqueue_style( 'pt-sans', 'https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap' );
+	wp_enqueue_style( 'mulish', 'https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap' ); 
 	
 	// Add Bootstrap, used in the main stylesheet.
 	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css', array(), '3.3' );
@@ -57,6 +58,7 @@ function move_enqueue_scripts() {
     wp_scripts()->add_data( 'jquery-core', 'group', 1 );
     wp_scripts()->add_data( 'jquery-migrate', 'group', 1 );
 }
+
 add_action( 'wp_enqueue_scripts', 'move_enqueue_scripts' );
 
 /**

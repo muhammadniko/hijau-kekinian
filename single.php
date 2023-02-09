@@ -9,16 +9,17 @@
 			<div class="post-contents">	
 				<?php if ( have_posts() ): while ( have_posts() ): the_post();?>
 				<h1 class="media-heading post-title"><?php the_title();?></h1>
-				<p align="center"> <!-- SHARE ON BUTTON -->				
-					<a target="popupwindow" href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>" id="sfacebook" title="Share on Facebook"> Share</a>
-					<a target="popupwindow" href="https://twitter.com/share?text=<?php the_title(); ?> - Read:&url=<?php the_permalink();?>" id="stwitter" title="Share on Twitter"> Share</a>
-					<a href="whatsapp://send?text=<?php the_permalink();?>" id="sgoogle" title="Share on WhatsApp"> Share</a>
-				</p> <!--/ SHARE ON BUTTON -->
+				
 				<p class="post-meta">
 					by <?php the_author_link();?>&nbsp;&nbsp;					
 					<i class="fa fa-calendar"></i> <?php echo get_the_date(get_option('date-format'));?> at <?php echo get_the_time(get_option('time-format')); ?>&nbsp;
 					&nbsp;
 				</p>
+				<p align="center"> <!-- SHARE ON BUTTON -->				
+					<a target="popupwindow" href="https://www.facebook.com/sharer.php?u=<?php the_permalink();?>" id="sfacebook" title="Share on Facebook"> Share</a>
+					<a target="popupwindow" href="https://twitter.com/share?text=<?php the_title(); ?> - Read:&url=<?php the_permalink();?>" id="stwitter" title="Share on Twitter"> Share</a>
+					<a href="whatsapp://send?text=<?php the_permalink();?>" id="sgoogle" title="Share on WhatsApp"> Share</a>
+				</p> <!--/ SHARE ON BUTTON -->
 				<?php the_content();?>
 				<br>
 				<hr>
@@ -31,7 +32,7 @@
 				<hr>
 				
 				<div class="about-author">
-    				<a class="pull-left" href="#"><?php echo get_avatar( get_the_author_meta('user_email'), $size = '100');?></a>
+    				<a class="pull-left" href="#"><?php echo get_avatar( get_the_author_meta('user_email'), $size = '100');?>		</a>
     				<h4 class="about-author-title"><?php the_author_meta('display_name');?></h4>
      				<?php the_author_meta('description');?>
 				</div>
